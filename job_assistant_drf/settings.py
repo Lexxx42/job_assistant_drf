@@ -155,8 +155,8 @@ REST_FRAMEWORK = {
     # TODO вот тут надо разобраться с типом авторизации после получения информации от фронтенда
     # Если авторизации по токенам недостаточно - подключить нужное.
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        # 'rest_framework.authentication.BasicAuthentication',
-        # 'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.TokenAuthentication',
     ],
 
